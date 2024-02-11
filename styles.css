@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: beige;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+}
+
+body {
+   background: grey; 
+}
+
+.header {
+  height: 300px;
+  border-radius: 15px;
+  background: rgb(27, 31, 35);
+  margin: 10px;
+  min-width: 200px;
+  padding: 15px;
+  position: relative;
+}
+
+.background-image {
+  background: url("https://images.inc.com/uploaded_files/image/1024x576/getty_485008244_105123.jpg");
+  border-radius: 15px 15px 0 0;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.profile-picture {
+  position: relative;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin-top: 40px;
+  border: 2px solid rgb(27, 31, 35);
+  z-index: 2;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.skills {
+  font-size:small;
+  font-weight: normal;
+}
+
+.work-experience-container {
+  display: flex;
+}
+
+.work-experience {
+  width: 500px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(16, 137, 87, 0.636);
+  border: 1px solid black;
+}
+
+.current-workplace{
+  font-size:large;
+}
+.info{
+  display: flex;
+}
+.info-text{
+ color:rgba(255,255,255,0.5)
+}
+.contact-info {
+  color:rgb(113,183,251);
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+}
+.contact-info:hover{
+text-decoration: underline;
+}
+.contact-info-1 {
+  color:rgb(113,183,251);
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  display: block;
+}
+.contact-info:before{
+  color: rgba(255,255,255,0.5);
+
+
+  content:"\00B7";
+  margin-right:4px;
+  margin-left: 2px;
+  text-decoration:none;
+
+
+}
+.contact-info:before:hover{
+  text-decoration: none !important ;
+}
+.btn-profile-open-to{
+  border: 1px black solid;
+  border-radius: 15px;
+  background-color:rgb(113,183,251);
+  padding: 4px;
+  color: black;
+  
+}
+.btn-profile-addprofile{
+  border: 1px rgb(113,183,251) solid;
+  border-radius: 15px;
+  background-color:rgb(27, 31, 35);;
+  padding: 4px;
+  color: rgb(112, 141, 170);
+}
+.btn-profile-addprofile:hover
+{
+  background:rgb(49, 80, 110) ;
+  box-shadow: inset 0 0 0 1px rgb(113,183,251);
+}
+.btn-profile-more:hover{
+  background:rgb(80, 100, 100) ;
+  box-shadow: inset 0 0 0 1px white;
+}
+
+
+.btn-profile-more{
+  border: 1px white solid;
+  border-radius: 15px;
+  background-color:rgb(27, 31, 35);;
+  padding: 4px;
+  color: white;
+}
+
+@media all and (max-width: 1000px) {
+  .work-experience {
+    width: 550px;
+    font-size: large;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .work-experience {
+    width: 250px;
+    font-size: medium;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .work-experience {
+    width: 150px;
+    font-size:small;
+  }
+
+  .work-experience-container {
+    flex-direction: column;
+  }
+}
